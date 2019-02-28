@@ -1,0 +1,169 @@
+@keyframes lightLamp {
+    0% { opacity: 1; }
+    7% { opacity: 1; }
+    8% { opacity: .3; }
+    10% { opacity: 1; }
+    12% { opacity: 0; }
+    14% { opacity: .6; }
+    16% { opacity: .2; }
+    18% { opacity: 1; }
+    38% { opacity: 1; }
+    39% { opacity: 0; }
+    40% { opacity: 1; }
+}
+
+@keyframes copter {
+    0% {
+        top: 10%;
+        left: -150%;
+    }
+
+    50% {
+        top: 10%;
+        left: 150%;
+        transform: scale(1);
+    }
+
+    51% {
+        transform: scale(-1, 1);
+    }
+
+    100% {
+        transform: scale(-1, 1);
+        top: 70%;
+        left: -150%;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    from {
+        top: 5%;
+        transform: scale(.97);
+        opacity: .6;
+    }
+
+    to {
+        top: 0;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleOut {
+    from {
+        top: 0;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        top: 5%;
+        transform: scale(.97);
+        opacity: .6;        
+    }
+}
+
+@keyframes fadeFirst {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeSecond {
+    33% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeLast {
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeFirstBlock {
+    0% { 
+        top: 50px;
+        opacity: 0; 
+    }
+    
+    100% { 
+        top: 0;
+        opacity: 1; 
+    }
+}
+
+@keyframes fadeSecondBlock {
+    0% { 
+        top: 50px;
+        opacity: 0; 
+    }
+    
+    100% { 
+        top: 0;
+        opacity: 1; 
+    }
+}
+
+@keyframes fadeLastBlock {
+    0% { 
+        top: 50px;
+        opacity: 0; 
+    }
+    
+    100% { 
+        top: 0;
+        opacity: 1; 
+    }
+}
+
+@keyframes fadeFirstTab {
+    0% { opacity: 0; }
+    100% { opacity: .7; }
+}
+
+@keyframes fadeSecondTab {
+    50% { opacity: 0; }
+    100% { opacity: .4; }
+}
+
+@keyframes fadeTooltip {
+    from {
+        top: 130%;
+        opacity: 0;
+    }
+
+    to {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutTooltip {
+    from {
+        top: 30px;
+        opacity: 1;
+    }
+
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}

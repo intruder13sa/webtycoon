@@ -1,0 +1,59 @@
+// vars
+
+$transition: all .3s ease;
+
+// banners
+
+$banner1: #7ebe62;
+$banner2: #3ebd84;
+$banner3: #42aeb4;
+$banner4: #6580d6;
+$banner5: #b367b4;
+
+// mixins
+
+@mixin Flex($justify-content: flex-start, $align-items: flex-start, $flex-direction: row, $flex-wrap: nowrap) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+}
+
+@mixin Text($font-size, $line-height) {
+    font-size: $font-size;
+    line-height: $line-height;    
+}
+
+@mixin Title($font-size, $line-height) {
+    font-family: 'Blogger Sans-Bold';
+    color: #fff;
+    @include Text($font-size, $line-height);
+}
+
+.text-bold { font-family: 'Blogger Sans-Bold', sans-serif; }
+.text-medium { font-family: 'Blogger Sans-Medium', sans-serif; }
+.text-light { font-family: 'Blogger Sans-Light', sans-serif; }
+
+// fonts
+
+@font-face {
+    font-family: 'Blogger Sans-Light';
+    src: url('../fonts/BloggerSans-Light.woff') format('woff'), url('../fonts/BloggerSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger Sans-Medium';
+    src: url('../fonts/BloggerSans-Medium.woff') format('woff'), url('../fonts/BloggerSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger Sans-Bold';
+    src: url('../fonts/BloggerSans-Bold.woff') format('woff'), url('../fonts/BloggerSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
